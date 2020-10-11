@@ -1,0 +1,10 @@
+a - The payment amount inside account information seems out of place,
+It would be a better practice from security and usability standpoint to separate the user account, credit card info and payments/orders.
+It is not certain that both card expiration fields are required.
+Second field below "Credit Card Billing Street Address" - what is it's purpose?
+
+b - Attempt to submit form without filling all the required fields,
+Try filling the address in the second field below,
+Try entering a card number that starts with a zero - field states that it won't accept dashes or spaces - there is a chance it may have been implemented to accept an integer while some credit cards can start with a zero.
+
+c - One possible serious bug is inability to submit cad/zip starting with zero. Solution is to change the field type.
